@@ -5,7 +5,7 @@ import NavHeader from "./components/NavHeader";
 const App = (): Node => {
   const template = document.createElement("template");
   template.innerHTML = `
-      <div class="app">
+      <div>
         ${NavHeader()}
         <div class="row">
             ${Image()}
