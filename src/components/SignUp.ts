@@ -34,7 +34,7 @@ const SignUp = (): string => {
                   <div class="form-group">
                     <label for="city">City</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
                       id="city"
                     />
@@ -43,7 +43,7 @@ const SignUp = (): string => {
                  <div class="form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="terms">
-                         <label class="form-check-label" for="terms">
+                         <label class="form-check-label text-muted" for="terms">
                             By signing up, you accept our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
                         </label>
                     </div>
@@ -61,7 +61,6 @@ const SignUp = (): string => {
               </form>
             </div>
         </div>
-    
     `;
 
   return template;

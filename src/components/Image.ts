@@ -8,8 +8,6 @@ const Image = (): string => {
                 <span>Earn good money with your car. </span>
            </div>
         </div>
-    
-    
   `;
 
   return template;
