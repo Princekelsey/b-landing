@@ -1,4 +1,4 @@
-import logo from "../assets/taxify-seeklogo.com.svg";
+import logo from "../assets/logo.svg";
 
 const NavHeader = (): string => {
   const template = `
