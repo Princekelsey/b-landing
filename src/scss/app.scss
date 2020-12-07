@@ -1,0 +1,122 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  z-index: 2;
+
+  img {
+    width: 70px;
+
+    @media (max-width: 576px) {
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    left: 1rem;
+  }
+}
+
+.action-container {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 2;
+
+  @media (max-width: 576px) {
+    right: 1rem;
+    flex-direction: row-reverse;
+  }
+}
+
+.image-container {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/img/bgimage_drivers.jpg");
+  background-size: cover;
+  height: 100vh;
+
+  .heading-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.signup-container {
+  margin-top: 10rem;
+
+  @media (max-width: 576px) {
+    margin-top: 6rem;
+  }
+}
+
+.input-container {
+  max-width: 450px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.input-group-text {
+  background-color: $white;
+  color: #6c757d;
+}
+
+.form-check-label {
+  font-size: 12px;
+
+  a {
+    color: #212529;
+    text-decoration: underline;
+  }
+}
+
+.form-check-input {
+  margin-top: 0.4rem;
+}
+
+// utility
+.f-sm {
+  font-size: 12px !important;
+}
+
+// media querry
+@media (max-width: 576px) {
+  .account-q {
+    display: none;
+  }
+
+  .lang-text {
+    display: none;
+  }
+
+  .sign-btn {
+    margin-left: 1.5rem !important;
+    margin-right: 0 !important;
+  }
+}

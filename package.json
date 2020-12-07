@@ -1,0 +1,27 @@
+{
+  "name": "bolt",
+  "version": "1.0.0",
+  "description": "Product landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && tsc --noEmit && parcel public/index.html --out-dir development --open",
+    "build": "rm -rf dist && tsc --noEmit && parcel build public/*.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
+  },
+  "keywords": [],
+  "author": "Prince Ajuobi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "@types/node": "^14.14.10",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
